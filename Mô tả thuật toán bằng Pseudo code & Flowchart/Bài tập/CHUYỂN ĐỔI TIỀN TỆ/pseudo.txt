@@ -1,0 +1,5 @@
+BEGIN
+  INPUT đô la mỹ
+  VND = đô la mỹ * 23000
+  DISPLAY VND
+END

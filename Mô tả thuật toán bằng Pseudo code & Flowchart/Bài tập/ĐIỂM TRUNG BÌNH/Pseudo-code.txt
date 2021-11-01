@@ -1,0 +1,5 @@
+BEGIN
+   INPUT toán , lý, hóa
+   average = (toán+ lý+hóa)/3
+   DISPLAY average
+END
