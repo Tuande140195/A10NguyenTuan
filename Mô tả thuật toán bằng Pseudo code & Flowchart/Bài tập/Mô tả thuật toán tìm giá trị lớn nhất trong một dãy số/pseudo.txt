@@ -1,0 +1,16 @@
+BEGIN
+   INPUT N là số lượng số có trong dãy
+   INPUT dãy a1-aN
+     Max= a1, i=2
+ while(i>0)
+   DO
+    IF i>n  
+     DISPLAY Max
+    ELSE
+      IF ai>max
+        max=ai
+        i=i+1
+       ELSE
+        i=i+1
+   END
+END

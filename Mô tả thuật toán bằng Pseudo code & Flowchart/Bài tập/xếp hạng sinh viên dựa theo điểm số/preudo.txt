@@ -1,0 +1,15 @@
+BEGIN
+  INPUT point(0;100)
+  IF point =>75
+     DISPLAY A
+  ELSE
+    IF 60<=point<75
+	   DISPLAY B
+	ELSE
+	  IF 45<=point<60
+	    DISPLAY C
+	  ELSE
+	    IF 35<=point<45
+		  DISPLAY D
+		ELSE DISPLAY E
+END
