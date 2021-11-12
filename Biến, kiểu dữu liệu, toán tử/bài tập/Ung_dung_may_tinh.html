@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<table>
+    <form action="" >
+        <tr>
+            <td colspan="2">
+                <input type="text" id="a" size="15">
+
+                <input type="text" id="b" size="15">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="caculate1();" >Addition(+)</button>
+
+                <button type="button" onclick="caculate2();">Subtraction(-)</button>
+
+                <button type="button" onclick="caculate3();">Multiplication(*)</button>
+
+                <button type="button" onclick="caculate4();">Division(/)</button>
+            </td>
+        </tr>
+    </form>
+</table>
+<label for="">Result: </label>
+<textarea name="" id="demo" cols="30" rows="1"></textarea>
+
+</body>
+</html>
+<script>
+    function caculate1() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let result = parseInt(a) + parseInt(b);
+        document.getElementById('demo').innerHTML=' ' + result;
+
+    }
+    function caculate2() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let result = parseInt(a) - parseInt(b);
+        document.getElementById('demo').innerHTML=' ' + result;
+
+    }
+    function caculate3() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let result = parseInt(a) * parseInt(b);
+        document.getElementById('demo').innerHTML=' ' + result;
+
+    }
+    function caculate4() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let result = parseInt(a) / parseInt(b);
+        document.getElementById('demo').innerHTML=' ' + parseFloat(result).toFixed(2);
+
+    }
+
+
+</script>
