@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+<form>
+ <div>
+   <input type="text" id="month">
+    <button type="button" onclick="byMonth()">Tính số ngày</button><br>
+
+    <label for="" id="result"></label>
+ </div>
+</form>
+<script>
+function byMonth() {
+let month = parseInt(document.getElementById('month').value);
+switch (month) {
+    case 2:
+        document.getElementById('result').innerHTML = 'Thang 2 co 28 hoac 29 ngay';
+        break;
+    case 1: case 3: case 5:case 7:case 8:case 10:case 12:
+        document.getElementById('result').innerHTML='Thang '+ month  +'co 31 ngay ';
+        break;
+    default:
+        document.getElementById('result').innerHTML = "Thang"+ month +'co 30 ngay';
+
+
+}
+}
+
+
+
+</script>
+</body>
+</html>

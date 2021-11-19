@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BT1
+    // let a = parseInt(prompt("nhap so a:"));
+    // let b = parseInt(prompt("nhap so b:"));
+    // if(a%b==0){
+    //     document.write("a chia het cho b")
+    // }else {
+    //     document.write("a khong chia het cho b")
+    // }
+    //BT2
+    // let a = parseInt(prompt("nhap tuoi"));
+    // if(a>15){
+    //     alert("ban co the học lop 10")
+    // }else {
+    //     alert("ban khong du dieu kien de vao lop 10")
+    // }
+    // //BT3
+    // let a = parseInt(prompt('Nhập số nguyên bất kỳ'));
+    // if (a>0){
+    //     document.write(a+ ' là số nguyên dương!');
+    // }
+    // else if (a==0){
+    //     document.write('Đây là số 0');
+    // }
+    // else {
+    //     document.write(a + ' là số nguyên âm!');
+    // }
+
+    //BT4
+    // let a = parseInt(prompt('Nhập số thứ nhất'));
+    // let b = parseInt(prompt('Nhập số thứ hai'));
+    // let c = parseInt(prompt('Nhập số thứ ba'));
+    // let max = a;
+    // if (max>b&&max>c) {
+    //     alert (max);
+    // }
+    // else if (b>c){
+    //     max = c;
+    //     alert(max);
+    // }
+    // else {
+    //     max = c;
+    //     alert (max);
+    // }
+
+    //BT5
+    // let exam = parseFloat(prompt('Nhập điểm kiểm tra:'));
+    // let examMidFinal = parseFloat(prompt('Nhập điểm kiểm tra giữa kỳ'));
+    // let examFinal = parseFloat(prompt('Nhập điểm kiểm tra cuối kỳ'));
+    // let average   = (exam + examFinal + examMidFinal)/3;
+    // if (average >= 9 ){
+    //     alert ('Bạn đạt hạng A');
+    // }
+    // else if (average >=7){
+    //     alert ('Bạn đạt hạng B');
+    // }
+    // else if (average >=5){
+    //     alert('Bạn đạt hạng C');
+    // }
+    // else {
+    //     alert ('bạn đạt hạng F');
+    // }
+    //BT6
+    // let averageSale = parseInt(prompt('Nhập vào doanh số bán hàng (triệu)'))  ;
+    // let moneyProfit;
+    // if (averageSale <= 100) {
+    //     moneyProfit = averageSale*0.05;
+    // }
+    // else if (averageSale<= 300){
+    //     moneyProfit = averageSale*0.1;
+    // }
+    // else {
+    //     moneyProfit = averageSale*0.2;
+    // }
+    // document.write('Số tiền hoa hồng bạn nhận đc là: ' + parseFloat(moneyProfit).toFixed(2) + ' triệu');
+
+    //BT7
+
+    let time = parseFloat(prompt('Nhập số phút sử dụng: '))
+    let time50;
+    let time200;
+    let timeMore200;
+    if (time <= 50) {
+        time50 = time*600 + 25000;
+        document.write ('Cước phí thuê bao của bạn là: ' +  time50 + ' ngàn đồng' );
+    }
+    else if (time <=200){
+        time200 = 50*600 + 25000 + (time-50)*400;
+        document.write  ('Cước phí thuê bao của bạn là: ' +  time200 + ' ngàn đồng' );
+    }
+    else {
+        timeMore200 = 50*600 + 150*400 + (time - 200)*200 +25000;
+        document.write  ('Cước phí thuê bao của bạn là: ' +  timeMore200 + ' ngàn đồng' );
+    }
+</script>
+</body>
+</html>

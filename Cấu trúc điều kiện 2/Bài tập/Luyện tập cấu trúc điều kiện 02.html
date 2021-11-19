@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BT1
+    let C = parseFloat(prompt('Nhập nhiệt độ cần đổi (C): ' ));
+    let F = C * 9/5 + 32;
+    document.write('Độ F: ' + F);
+
+    //Bt2
+    let met = parseFloat(prompt('nhap do dai (m)'));
+    let feet = met * 3.2808;
+    document.write('Feet = ' + feet);
+
+    //BT3
+    let square = parseInt(prompt('Nhap canh hinh vuong'));
+    let areaSquare = square*square;
+    document.write('dien tich la: ' + areaSquare);
+
+    //BT4
+    let width = parseInt(prompt('chieu rong'));
+    let height = parseInt(prompt('chieu dai'));
+    let area = width*height;
+    document.write('dien tich: ' + area);
+
+    //BT5
+    let a = parseInt(prompt('Nhập cạnh a'));
+    let b = parseInt(prompt('Nhập canh b'));
+    let areaTriangle = a*a*0.5;
+    document.write('dien tich tam giac vuong la:'+ areaTriangle)
+
+    //BT6
+    let a= parseInt(prompt('Nhập hệ số a'));
+    let b= parseInt(prompt('Nhập hệ số b'));
+    if (a == 0){
+        document.write('Phương trình vô nghiệm');
+    }
+    else {
+        document.write('Phương trình có nghiệm x = '+ -b/a);
+    }
+
+    //BT7
+    let a= parseInt(prompt('Nhập hệ số a'));
+    let b= parseInt(prompt('Nhập hệ số b'));
+    let c= parseInt(prompt('Nhập hệ số c'));
+    if (a==0){
+        if (b==0){
+            document.write('Phương trình vô nghiệm');
+        }
+        else{
+            document.write('Phương trình có nghiệm x = '+ -c/b);
+        }
+    }
+    else {
+        let denlta = b*b -(4*a*c);
+        if (denlta < 0){
+            document.write('Phương trình vô nghiệm');
+        }
+        else if (denlta == 0){
+            document.write ('Phương trình có nghiệm kép x1 = x2 = ' + -b/2*a);
+        }
+        else {
+
+            document.write('Phương trình có nghiệm x1= '+ (-b + Math.sqrt(denlta))/(2*a));
+            document.write('<br/>');
+            document.write('Phương trình có nghiệm x2= '+ (-b - Math.sqrt(denlta))/(2*a));
+        }
+    }
+
+    //BT8
+    let age = parseInt(prompt('Nhập một số bất kỳ'));
+    if (age>0 && age<120){
+        document.write('Đây là tuổi của một người');
+    }
+    else {
+        document.write('Đây không phải là tuổi của một người');
+    }
+
+    //BT9
+    let a = parseInt(prompt('Nhập độ dài cạnh a'));
+    let b = parseInt(prompt('Nhập độ dài cạnh b'));
+    let c = parseInt(prompt('Nhập độ dài cạnh c'));
+    if (a>0 && b>0 && c>0) {
+        if (a+b >c && a+c>b && b+c >a){
+            document.write('Đây là 3 cạnh của một tam giác');
+        }
+        else {
+            document.write('Đây không phải 3 cạnh cảu một tam giác');
+        }
+    }
+    else{
+        document.write('Đây không phải 3 cạnh cảu một tam giác');
+    }
+
+    //BT10let money
+    Electro = parseInt(prompt('Nhập số chữ điện (kWh): '));
+    let moneyElectroResult;
+    if (moneyElectro<50){
+        moneyElectroResult = 1.678*moneyElectro;
+        document.write('Tiền điện tháng này của bạn là: ' + moneyElectroResult);
+    }
+    else if (moneyElectro<100){
+        moneyElectroResult = 1.678*50 + (moneyElectro-50)*1.734;
+
+    }
+    else if (moneyElectro<200){
+        moneyElectroResult = 1.678*50 + 1.734*50 + (moneyElectro-100)*2.014;
+    }
+    else if (moneyElectro<300){
+        moneyElectroResult = 1.678*50 + (moneyElectro-200)*2.536+ 1.734*50+ 100*2.014;
+    }
+    else if (moneyElectro<400){
+        moneyElectroResult = 1.678*50 + (moneyElectro-300)*2.834+ 1.734*50+ 100*2.014+ 100*2.536;
+    }
+    else {
+        moneyElectroResult = 1.678*50 + (moneyElectro-400)*2.927+ 1.734*50+ 100*2.014+ 100*2.536 + 100*2.834;
+    }
+    document.write('Tiền điện tháng này của bạn là: ' + moneyElectroResult);
+
+    //BT11
+    let wage = parseInt(prompt('Nhập tiền lương của bạn (triệu) '));
+    if (wage<7){
+        document.write('Thuế thu nhập cá nhân của bạn là ' + wage*0.1 +' triệu');
+    }
+    else if (wage<15){
+        document.write('Thuế thu nhập cá nhân của bạn là ' + wage*0.2 + ' triệu');
+    }
+    else {
+        document.write('Thuế thu nhập cá nhân của bạn là ' + wage*0.3  + ' triệu');
+    }
+    //BT12
+    let a = parseInt(prompt('số tiền bạn muốn vay:'))
+    let x = parseInt(prompt('so thang ban muon vay:'))
+    for (let i=1;i<=x;i++){
+        a= a+a*0.07;
+        document.write('Số tiền lãi và tổng tiền tháng thứ' + i + 'là'+a+ "<br>")
+    }
+
+</script>
+</body>
+</html>

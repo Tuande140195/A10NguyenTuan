@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60101106-f4e4-44b3-b9bc-bc3fa09d12ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Bai 1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cấu trúc điều kiện 2/Bài tập/Tính chỉ số cân nặng của cơ thể.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cấu trúc điều kiện 2/Bài tập/câu lệnh switch cáe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cấu trúc điều kiện 2/Bài tập/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cấu trúc điều kiện 2/Bài tập/máy tính.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cấu trúc điều kiện 2/Thực hành/su_kien_ban_phim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cấu trúc điều kiện 2/Thực hành/su_kien_chuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cấu trúc điều kiện 1/thực hành/IfElseIf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cấu trúc điều kiện 1/thực hành/kiemtranamnhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cấu trúc điều kiện 1/thực hành/luyentapIfElse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cấu trúc điều kiện 1/thực hành/luyentapvoiSwitch_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cấu trúc điều kiện 1/thực hành/thuchanhtoantu3ngoi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Biến, kiểu dữu liệu, toán tử/bài tập/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Biến, kiểu dữu liệu, toán tử/bài tập/demo.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2137TSeJe3v11OxdvkXd88iW6D7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Cấu trúc điều kiện 2/Bài tập" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60101106-f4e4-44b3-b9bc-bc3fa09d12ef" name="Default Changelist" comment="" />
+      <created>1637157924368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637157924368</updated>
+      <workItem from="1637157925582" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="768" y="131" key="FileChooserDialogImpl" timestamp="1637157955958">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="768" y="131" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1637157955958" />
+  </component>
+</project>
