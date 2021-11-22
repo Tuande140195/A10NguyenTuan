@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BT1
+    // let i=1;
+    // for (i=1;i<100;i++){
+    //     document.write(i+ "<br>")
+    //     if (i==99){
+    //         alert("Hoàn thành");}
+    // }
+
+
+    //BT2
+// let c=Number(prompt("nhập vào nhiệt độ"))
+//     while (c<20||c>100){
+//         if (c<20){
+//         alert("tăng nhiệt độ");
+//         c=Number(prompt("nhập vào nhiệt độ"))
+//         }else if (c>100){
+//             alert("giảm nhiet do:")
+//             c=Number(prompt("nhập vào nhiệt độ"))
+//         }
+//
+//     }
+//     alert("nhiệt độ bình thường")
+
+
+    //BT3
+
+    // let a = 0 , b= 0, c=0
+    // let fibonacci = "";
+    // for (let i=0; i<20;i++){
+    //     if(i==0){
+    //         a=1
+    //         b=1
+    //         fibonacci += b+ " <br>"
+    //     }else{
+    //
+    //         a= b+c
+    //         b = c
+    //         c = a
+    //         fibonacci += a+ " <br>"
+    //         console.log(i +" = "+a)
+    //     }
+    // }
+    // document.write(fibonacci)
+
+    //BT4
+    // let a = 0 , b= 0, c=0
+    // let fibonacci = "";
+    // let chia5;
+    // for (let i=0; i<20;i++){
+    //     if(i==0){
+    //         a=1
+    //         b=1
+    //         fibonacci += b+ " <br>"
+    //     }else{
+    //
+    //         a= b+c
+    //         b = c
+    //         c = a
+    //         fibonacci += a+ " <br>"
+    //         console.log(i +" = "+a)
+    //         if (a%5==0){
+    //             chia5= a;
+    //             break;
+    //         }
+    //     }
+    // }
+    //     document.write("số đầu tiên chia hết cho 5 là:"+ chia5)
+
+//BT5
+//     let a=0,b=0,c=0, sum=0;
+//     let fibonacci="";
+//     for (let i=0; i<20;i++){
+//         if(i==0){
+//             a=1
+//             b=1
+//             fibonacci += a+ " <br>"
+//             sum +=a;
+//         }else{
+//
+//             a= b+c
+//             b = c
+//             c = a
+//             fibonacci += a+ " <br>"
+//             sum +=a;
+//             console.log(i +" = "+a)
+//
+//         }
+//     }
+//     document.write(fibonacci)
+// document.write("tổng cảu dãy la:"+ sum)
+
+    //BT6
+
+  // let count = 0, tong = 0;
+  // let days=""
+  //   for (let i=1; ;i++){
+  //       if(i%7==0){
+  //           days+=i+"<br>"
+  //           console.log(days)
+  //           tong+=i
+  //           count++
+  //           if (count==30) break;
+  //       }
+  //   }
+  //   document.write(days + "<br>")
+  //   document.write("tổng:"+tong)
+
+    //BT7
+
+    // for (let i =0; i<=100;i++){
+    //     if(i%3==0&&i%5==0){
+    //         document.write(i+"FizzBuzz <br>")
+    //     }else {
+    //         if (i%3==0){
+    //             document.write(i+"Fizz <br>")
+    //         }else if (i%5==0){
+    //             document.write(i+"Buzz <br>")
+    //         }
+    //     }
+    // }
+
+    //BT
+    let phamvi = Number(prompt("Trò chơi đoán số từ 0 - "))
+    let nhapso = Number(prompt("Nhập vào số muốn đoán"))
+    let soRamdom
+    if(phamvi){
+        soRamdom = Math.floor(Math.random()*phamvi)
+        if(soRamdom == nhapso){
+            alert("Bạn đã đoán đung")
+        }else{
+            while (soRamdom != nhapso){
+                alert("Bạn đoán sai số đúng là "+soRamdom)
+                nhapso = Number(prompt("Nhập vào số muốn đoán"))
+            }
+            alert("Bạn đoán đúng")
+        }
+    }
+
+</script>
+</body>
+</html>
