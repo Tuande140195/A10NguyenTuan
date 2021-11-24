@@ -128,20 +128,28 @@
     // }
 
     //BT
-    let phamvi = Number(prompt("Trò chơi đoán số từ 0 - "))
-    let nhapso = Number(prompt("Nhập vào số muốn đoán"))
-    let soRamdom
-    if(phamvi){
-        soRamdom = Math.floor(Math.random()*phamvi)
-        if(soRamdom == nhapso){
-            alert("Bạn đã đoán đung")
-        }else{
-            while (soRamdom != nhapso){
-                alert("Bạn đoán sai số đúng là "+soRamdom)
-                nhapso = Number(prompt("Nhập vào số muốn đoán"))
+    let from = parseInt(prompt("Trò chơi đoán số từ: "))
+    let to = parseInt(prompt("số cuối cùng"))
+    let numberCom=Math.floor(Math.random()*(to-from+1)+from );
+    let numberUser;
+    let pass=false;
+    for (let i=0; i<3 && !pass;i++){
+        numberUser= parseInt(prompt("mời bạn nhập số"));
+        if (numberUser===numberCom){
+            alert("chiến thắng");
+            pass=true;
+        }else {
+            if (numberUser < numberCom){
+                alert("số bạn đoán bé hơn");
+
+            }else {
+                alert("số bạn đoán lớn hơn");
+
             }
-            alert("Bạn đoán đúng")
         }
+    }
+    if (!pass){
+        alert("thua cuộc")
     }
 
 </script>
