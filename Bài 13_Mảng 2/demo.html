@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Mảng 2 chiều
+    // let arr= [1,'a',true];
+    // let array2d= [[1,2,3,4],//0
+    //     [7,8,9,10],//1
+    //     [11,12,13,14]];//2
+    // // document.write(array2d+"<br>")
+    // // document.write(array2d[2][0]);//in phan tu trong mang 2d
+    //
+    // for (let row = 0; row<array2d.length; row++){
+    //     for (let col = 0; col<array2d[row].length;col++){
+    //         document.write(array2d[row][col]+" "+" ")
+    //     }
+    //     document.write("<br>")
+    // }
+
+
+    //BT7
+    let array = new Array(10);
+    for (let index = 0; index<array.length; index++){
+       let number = parseInt(prompt("mời bạn nhập số nguyên tại index" + index));
+       array[index]= number;
+    }
+    let v = parseInt(prompt("nhập số V:"));
+    //tìm v có tồn tại tỏng array hay ko
+    // let indexV=-1;
+    // for (let index=0; index<array.length; index++){
+    //     if (array[index]==v){
+    //         indexV=index;
+    //     }
+    // }
+    // thay thế code trên
+    let indexV= array.indexOf(v);
+    if (indexV== -1){
+        alert(v+ "không có trong array")
+    }else{
+        //xóa v khỏi mảng
+        // for (let index = indexV; index<=array.length-2; index++) {
+        //     array[index] = array[index + 1];
+        // }
+        // array[array.length-1]=0;
+
+        array.splice(indexV,1);
+        array.push(0);
+    }
+
+    for (let value of array){
+        document.write(value+" ");
+
+    }
+</script>
+</body>
+</html>

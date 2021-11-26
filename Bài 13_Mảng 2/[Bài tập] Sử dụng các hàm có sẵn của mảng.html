@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BT1
+    // let myColor = ["Red", "Green", "White", "Black"];
+    // myColor=myColor.concat();
+    // document.write(myColor)
+
+    //BT2
+    // let array = [1,2,4,5,6,8,7];
+    // let result= [array[0]];
+    // for (let i =1; i<array.length; i++){
+    //     if ((array[i-1]%2 === 0 )&& (array[i]%2===0)){
+    //         result.push("-", array[i] );
+    //     }else {
+    //         result.push(array[i]);
+    //     }
+    // }
+    // console.log(result.join(''))
+
+// //BT3
+
+
+      let array= 'NguyenAnhTUAN';
+      let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+       let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+       let result=[];
+        for (let i = 0; i<array.length; i++){
+               if (UPPER.indexOf(array[i]) !==-1){
+                   result.push(array[i].toLowerCase());
+               }else if (LOWER.indexOf(array[i]) !==-1){
+               result.push(array[i].toUpperCase());
+               }else {
+                   result.push(array[i])
+               }
+        }
+        document.write(result.join(''))
+</script>
+</body>
+</html>
