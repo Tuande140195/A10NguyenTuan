@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BT1
+    // function squart(num){
+    //     return num*num;
+    // }
+    // let number = parseInt(prompt('Nhập vào số bất kỳ'));
+    // let result = squart(number);
+    // alert('Bình phương của '+ number + ' là ' + result);
+    //
+
+
+    //BT2
+
+    // function  getArea(radius){
+    //     let area = radius*radius*3.14;
+    //     return area;
+    // }
+    // function getCir(radius){
+    //     let cir = radius*2*3.14;
+    //     return cir;
+    // }
+    // let radius = parseInt(prompt('Nhập vào bán kính hình tròn'));
+    // let resultA = getArea(radius);
+    // let resultC = getCir(radius);
+    // document.write('Diện tích hình tròn là: ' + resultA);
+    // document.write('<br>');
+    // document.write('Chu hình hình tròn là: ' + resultC);
+    //
+
+    // //BT3
+    // function factorial(num){
+    //     let result = 1;
+    //     for(let i=1;i<=num;i++){
+    //         result = result*i;
+    //     }
+    //     return result;
+    // }
+    // let number = parseInt(prompt('Nhập số nguyên bất kỳ'));
+    // let factorial1 = factorial(number);
+    // alert('Giai thừa của số ' + number + ' là: ' + factorial1 );
+
+
+    //BT4
+    // function checkNum(val){
+    //
+    //     if (!isNaN(val)){
+    //         return true;
+    //     }
+    //     else{
+    //         return false;
+    //     }
+    // }
+    // let value = prompt('Nhập vào bất kỳ');
+    // let result = checkNum(value);
+    // document.write(result);
+
+
+    //BT5
+    // let array = [];
+    // for (let i=0;i<3;i++){
+    //     array[i] = parseInt(prompt('Nhập vào số nguyên thứ ' + (i+1)))
+    // }
+    // function findMin(arr){
+    //     let min = arr[0];
+    //     for(let i=0;i<arr.length;i++){
+    //         if (arr[i]<min){
+    //             min = arr[i];
+    //         }
+    //     }
+    //     return min;
+    // }
+    // let result = findMin(array);
+    // document.write('Số bé nhất là ' + result);
+
+    //BT6
+
+    // function check(num){
+    //     if(num>0){
+    //         return true;
+    //     }
+    //     else{
+    //         return false;
+    //     }
+    // }
+    // let number = parseInt(prompt("nhập số nguyên bất kỳ "));
+    // let result = check(number);
+    // if (result){
+    //     document.write('Đây là số nguyên dương');
+    // }
+    // else{
+    //     document.write('Đây là số nguyên âm');
+    // }
+
+    //BT7
+
+    // function shift(num1,num2){
+    //     let arr = [];
+    //     let num0 = num1;
+    //     num1=num2;
+    //     num2=num0;
+    //     arr[0] = num1;
+    //     arr[1] = num2;
+    //     return arr;
+    // }
+    // let number1 = parseInt(prompt('Nhập số thứ nhất'));
+    // let number2 = parseInt(prompt('Nhập số thứ 2'));
+    // let result = shift(number1,number2);
+    // document.write(result);
+
+    //BT8
+    // function resever(arr){
+    // arr=arr.reverse();
+    // return arr;
+    // }
+    // let array = [];
+    // for(let i=0;i<4;i++){
+    //     array[i] = parseInt(prompt('Nhập vào số nguyên'))
+    // }
+    // let result = resever(array);
+    // document.write(result);
+
+
+    //BT9
+    let array = [];
+    let stringRandom = (prompt('Nhập vào chuỗi không dấu: ')).split('');
+    array = stringRandom;
+    function checkString(arr){
+        let n = 0;
+        for(let i=0;i<array.length;i++){
+            if(arr==array[i]){
+                n++;
+            }
+        }
+        if(n==0){
+            return -1;
+        }
+        else{
+            return n;
+        }
+    }
+    let str = prompt('Nhập vào ký tự bất kỳ');
+    let result = checkString(str);
+    if (result==-1){
+        document.write('Ký tự bạn vừa nhập không nằm trong mảng');
+    }
+    else{
+        document.write('Ký tự bạn vừa nhập xuất hiện ' + result + ' lần trong mảng');
+    }
+</script>
+</body>
+</html>

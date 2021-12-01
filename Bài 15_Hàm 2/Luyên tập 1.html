@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BT1
+    // function alertMessage() {
+    //     alert('xin chào!');
+    // }
+
+    //BT2
+    // function alertMessage(result) {
+    //     alert(result);
+    // }
+    // function increase(num) {
+    //     return num+1;
+    // }
+    // let number = parseInt(prompt('Nhập số bất kỳ'));
+    // let result = increase(number);
+
+
+    //BT3
+    // function getNumber(a,b) {
+    //     if(a>b){
+    //         return 0;
+    //     }
+    //     else if (a==b){
+    //         return 1;
+    //     }
+    //     else {
+    //         return a+b;
+    //     }
+    //
+    // }
+    // let number1 = parseInt(prompt('Nhập vào tham số thứ nhất'));
+    // let number2 = parseInt(prompt('Nhập vào tham số thứ hai'));
+    // let result = getNumber(number1,number2);
+    // if (result==0){
+    //     alert(number1+ ' lớn hơn ' +number2);
+    // }
+    // else if (result==1){
+    //     alert(number1 + ' bằng ' + number2);
+    // }
+    // else{
+    //     alert('Tổng 2 số là: ' + result);}
+
+    //BT4
+    // function addNumbers() {
+    //     let firstNum = 4;
+    //     let secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result);
+    // result = addNumbers();
+    // alert(result);
+
+    //BT5
+    let star = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe' ,'Regulus'];
+    let constellation = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo']
+    let value= prompt('Nhập tên ngôi sao bạn muốn');
+    function checkStar(name) {
+        for(let i=0;i<star.length;i++){
+            if(name === star[i]){
+                return constellation[i];
+            }
+        }
+        return 0;
+    }
+    let result = checkStar(value);
+    if(result===0){
+        alert('Rất tiếc ngôi sao bạn tìm không nằm trong chòm sao tụi mình có :( ');
+    }
+    else{
+        alert('Ngôi sao bạn tìm nằm trong chòm sao ' + result);
+    }
+
+
+</script>
+</body>
+</html>
