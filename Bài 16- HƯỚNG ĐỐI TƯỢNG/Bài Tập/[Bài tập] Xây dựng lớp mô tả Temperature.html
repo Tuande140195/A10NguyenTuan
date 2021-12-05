@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="temperature"></p>
+<script>
+    class Temperature{
+        constructor(C){
+            this.C = C;
+        }
+        conversionF(){
+            return (this.C*1.8)+32;
+        }
+        conversionKevin(){
+            return (this.C+273.15);
+        }
+        getDisplay(){
+            return "Độ F: " + this.conversionF() +"°C" + '<br>'
+                + "Độ Kevin: " + this.conversionKevin()+"°K";
+        }
+    }
+    let temperature = new Temperature(100);
+    document.getElementById('temperature').innerHTML=temperature.getDisplay();
+</script>
+</body>
+</html>

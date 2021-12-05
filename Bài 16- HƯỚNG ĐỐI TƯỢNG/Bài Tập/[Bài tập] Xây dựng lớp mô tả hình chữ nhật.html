@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <p id="rectangle"></p>
+</div>
+<canvas id="Canvas" height="500" width="1368"></canvas>
+
+<script>
+    class Rectangle{
+        constructor(width,height) {
+            this.width = width;
+            this.height = height;
+        }
+        getArea(){
+            return this.width*this.height;
+        }
+        getC(){
+            return (this.width+this.height)*2;
+        }
+        getDisplayRect(){
+            let ctx = document.getElementById('Canvas').getContext('2d');
+            ctx.strokeStyle = "red";
+            ctx.strokeRect(50,60,this.width,this.height);
+            ctx.stroke();
+        }
+        getRect(){
+            return 'Chu vi hình chữ nhật là: '+ this.getC() + '<br>'
+                + ' Diện tích hình chữ nhật là: ' + this.getArea() + '<br>'
+                + this.getDisplayRect();
+        }
+    }
+    let rect = new Rectangle(150,100);
+
+    document.getElementById('rectangle').innerHTML= rect.getRect();
+
+</script>
+</body>
+</html>

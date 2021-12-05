@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class ConNguoi{
+        constructor(ten, diaChi) {
+
+            this.ten = ten;
+            this.diaChi = diaChi;
+        }
+        diAn(){
+            document.write(" Ban " + this.ten + " di ăn sang. <br>")
+        }
+        //setter
+       capNhatNamSinh(namSinh){
+            this.namSinh = namSinh
+        }
+        setTen(tenMoi){
+            this.ten;
+        }
+        //getter
+        getNamSinh(){
+           return this.namSinh;
+        }
+        getTen(){
+            return this.ten;
+        }
+    }
+    let conNguoi_1 = new ConNguoi("Hòa", "Đà Nẵng");
+    let conNguoi_2 = new ConNguoi("Nam", "SG");
+
+    conNguoi_1.diAn();
+    conNguoi_2.diAn();
+    document.write(conNguoi_1.diaChi)
+
+
+
+    // dùng bằng cách functiont
+
+    function ConNguoi(ten,diaChi) {
+        var ten = ten;
+        var diaChi = diaChi;
+         this.diAnSang = function () {
+         document.write("Bạn " + ten + " đi ăn sáng. <br>")
+
+         }
+
+    }
+    let conNguoi1 = new ConNguoi("nam", "đà nẵng");
+    conNguoi1
+
+
+    //Tạo nhanh
+
+    let iphone11 ={
+        ten : "iphone11",
+        hangSX:"apple",
+        namSX: 2021,
+        gia:200,
+
+        hienThi:
+        function () {
+            document.write(this.ten + " - "+ this.hangSX + "<br>")
+
+        }
+    }
+    let samsungs22={
+        ten: "samsungs22",
+        hangSX: "samsung ",
+
+        hienThi:
+        function () {
+            document.write(this.ten + " - "+ this.hangSX)
+
+        }
+    }
+</script>
+</body>
+</html>
