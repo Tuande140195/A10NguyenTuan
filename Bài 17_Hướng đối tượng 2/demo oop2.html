@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Bird{
+        constructor(weight) {
+            this.weight = weight;
+        }
+        getBird(){
+            return this.weight;
+        }
+    }
+    class Animal {
+        constructor( name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        sayName(){
+            document.write("Tên của Animal là " + this.name + " tuổi đời "+ this.age +"<br>" )
+        }
+        getName(){
+            return this.name;
+        }
+        setName(newName){
+            this.name = newName ;
+        }
+        eat(bird){
+            if (bird.we)
+        }
+
+    }
+
+    class Dog extends Animal{
+          run(){
+              document.write("dog run...!" + "<br>")
+          }
+        sayName(){
+            document.write("Tên của Dog là " + this.name + " tuổi đời "+ this.age +"<br>" )
+        }
+    }
+     class Cat extends Animal{
+
+     }
+    let myDog = new Dog("gau", 2);
+    myDog.setName("tom");
+    myDog.sayName();
+    myDog.run()
+
+    let myCat = new Cat("Mew", 1);
+    myCat.sayName()
+</script>
+</body>
+</html>
